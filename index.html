@@ -3,25 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KEYBORD-PLAYER</title>
+    <title>TypeSprint</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- HEADER -->
     <header>
-        <h1>KEYBOARD-PLAYER</h1>
-        <h2>Ecrire plus vites en s'amussant</h2>
-        <h5>KEYBOARD-PLAYER est une application en ligne qui vous apprend a tapper plus vite au clavier </h5>
+        <h1>TypeSprint</h1>
+        <h2>Ecrire plus vite en s'amussent !</h2>
+        <h3>TypeSprint est une application en ligne pour apprendre à taper plus vite au clavier tout en s'amussent ;)</h3>
     </header>
-    
+
+    <!-- MAIN -->
     <main>
-        <div class="container">
-            <label id="level">NIVEAU FACILE</label>
-            <input type="text" id="word">
-            <textarea id="ans"></textarea>
-            <button id="validation">VALIDER</button>
+        <!-- <div class="zoneOptions">
+            <p>Choisissez votre option et tapez la proposition qui s'affiche dans le champ en-dessous.</p>
+            <div class="optionSource">
+                <input type="radio" name="optionSource" id="mots" value="1" checked>
+                <label for="mots">Mots</label>
+                <input type="radio" name="optionSource" id="phrases" value="2">
+                <label for="phrases">Phrases</label>
+            </div>
+        </div> -->
+
+        <div class="level">
+            <p>Niveau : <span>1</span></p>
         </div>
+
+        <!-- <div class="zoneProposition">
+           TypeSprint
+        </div> -->
+
+        <div class="text">
+            <textarea name="text" id="text" readonly></textarea>
+        </div>
+
+        <div class="zoneSaisie">
+            <input type="text" id="inputEcriture" name="inputEcriture">
+            <button id="btnValiderMot">Valider</button>
+        </div>
+
+        <div class="zoneScore">
+            Votre score : <span>0</span>
+        </div>
+        
     </main>
 
-    <footer> @Copyright : DRA-KANE</footer>
+    <!-- FOOTER -->
+    <footer>
+        @Copyright : DRA-KANE. 
+    </footer>
 </body>
 </html>
